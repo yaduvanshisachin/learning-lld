@@ -1,5 +1,6 @@
 package StrategyDesignPattern;
 
+//Robot has-a different strategies to create the robot
 abstract class Robot{
     Talkable talkable;
     Walkable walkable;
