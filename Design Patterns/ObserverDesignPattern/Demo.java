@@ -40,9 +40,11 @@ class Channel implements IChannel {
 
     @Override
     public void notifySubscribers() {
-        for (Subscriber subscriber : subscribers) {
-            subscriber.update();
-        }
+        // for (Subscriber subscriber : subscribers) {
+        //     subscriber.update();
+        // }
+
+        subscribers.forEach(s -> s.update());
     }
 
     public void uploadNewVideo(String newVideoTitle) {

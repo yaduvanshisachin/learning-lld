@@ -1,5 +1,7 @@
 package SingletonDesignPattern;
 
+
+// Single Threaded environment
 class Singleton{
     private static Singleton instance  = null;
 
