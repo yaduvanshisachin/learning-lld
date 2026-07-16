@@ -2,7 +2,7 @@ package StrategyDesignPattern.payment;
 
 public class ShoppingCart {
     private double amount;
-    private PaymentStrategy strategy;
+    private PaymentStrategy strategy; //shoppingCart has-a different ways/strategies to make payment
 
     ShoppingCart(double amount, PaymentStrategy strategy){
         this.amount = amount;

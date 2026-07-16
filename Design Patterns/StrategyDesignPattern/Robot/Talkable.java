@@ -1,10 +1,9 @@
-package StrategyDesignPattern;
+package StrategyDesignPattern.Robot;
 
 //Strategy Talkable
 public interface Talkable{
     void talk();
 }
-
 
 class NormalTalk implements Talkable{
     @Override

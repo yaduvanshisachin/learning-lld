@@ -1,4 +1,4 @@
-package StrategyDesignPattern;
+package StrategyDesignPattern.Robot;
 
 //Strategy Walkable
 interface Walkable{

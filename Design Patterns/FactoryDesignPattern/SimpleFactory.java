@@ -50,6 +50,6 @@ class BurgerFactory{
             return new PremiumBurger();
         }
 
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("Invalid Burger Type");
     }
 }

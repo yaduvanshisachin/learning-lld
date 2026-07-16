@@ -1,4 +1,4 @@
-package StrategyDesignPattern;
+package StrategyDesignPattern.Robot;
 
 //Robot has-a different strategies to create the robot
 abstract class Robot{
