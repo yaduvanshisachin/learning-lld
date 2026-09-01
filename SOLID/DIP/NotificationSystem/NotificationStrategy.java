@@ -1,11 +1,11 @@
 package SOLID.DIP.NotificationSystem;
 
+//This is MessageService (have different strategies or family of algorithms)
 public interface NotificationStrategy {
-    //I have different strategies (family of algorithms)
     void send(String msg);
 }
 
-
+//concreate strategies
 class EmailNotification implements NotificationStrategy{
     @Override
     public void send(String messege) {

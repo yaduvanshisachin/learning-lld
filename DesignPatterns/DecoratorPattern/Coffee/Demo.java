@@ -1,4 +1,4 @@
-package DecoratorPattern.Coffee;
+package DesignPatterns.DecoratorPattern.Coffee;
 
 /*
     1. CoffeeDecorator is-a coffee  {only some extra ingridients added}
@@ -21,7 +21,7 @@ class MilkDecorator extends CoffeeDecorator {
 
     @Override
     public String getDescription() {
-        return coffee.getDescription() + ", added Milk";
+        return coffee.getDescription() + " + added Milk";
     }
     
     @Override
@@ -38,7 +38,7 @@ class SugarDecorator extends CoffeeDecorator {
     
     @Override
     public String getDescription() {
-        return coffee.getDescription() + ", added Suger";
+        return coffee.getDescription() + " + added Suger";
     }
     
     @Override
@@ -51,11 +51,12 @@ class SugarDecorator extends CoffeeDecorator {
 public class Demo {
     public static void main(String[] args) {
         Coffee coffee = new SimpleCoffee();
+        System.out.println(coffee.getDescription() + " " + coffee.cost());
 
-        coffee = new MilkDecorator(coffee);
-        System.out.println(coffee.getDescription() + " " + coffee.cost());
+        Coffee milkDecoratedCoffee = new MilkDecorator(coffee);
+        System.out.println(milkDecoratedCoffee.getDescription() + " " + milkDecoratedCoffee.cost());
         
-        coffee = new SugarDecorator(coffee);
-        System.out.println(coffee.getDescription() + " " + coffee.cost());
+        Coffee sugarDecoratedCoffee = new SugarDecorator(milkDecoratedCoffee);
+        System.out.println(sugarDecoratedCoffee.getDescription() + " " + sugarDecoratedCoffee.cost());
     }    
 }

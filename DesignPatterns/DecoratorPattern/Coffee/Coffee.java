@@ -1,4 +1,4 @@
-package DecoratorPattern.Coffee;
+package DesignPatterns.DecoratorPattern.Coffee;
 
 public interface Coffee {
     String getDescription();
