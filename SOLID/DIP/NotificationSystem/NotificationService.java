@@ -1,6 +1,6 @@
 package SOLID.DIP.NotificationSystem;
 
-//NotificationService has-a diff strategies to send notification
+//NotificationService has-a different strategies to send notification
 public class NotificationService {
     private NotificationStrategy strategy;
 
@@ -16,19 +16,19 @@ public class NotificationService {
 
 
 //Dip :  High level module should not depend on low-level modules both should depend on abstration     
-// Notification service does not need to know about  how notification will be sent
+// Notification service does not need to know about how notification will be sent
 
 
 
 //******************DIP violation****************//
 
-// class EmailService{
+// class EmailService {
 //     void send(String message){
 //         System.out.println("Email sent: " + message);
 //     }
 // }
 
-// class NotificationService{
+// class NotificationService {
 //     private EmailService emailService = new EmailService();
 
 //     void notifyUser(String message){
